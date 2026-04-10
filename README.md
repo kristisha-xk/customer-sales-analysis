@@ -10,6 +10,8 @@ The goal is to identify retention patterns, key revenue drivers, and opportuniti
 ## Tools & Technologies
 - SQL (data extraction & transformation)
 - Power BI (data visualization)
+## Dataset
+
 ## Analysis
 - Sales Dynamic Analysis found trends and patterns over time
 - RFM Analysis segmented customers
