@@ -1,32 +1,40 @@
-# Customer-Sales-Analysis
+# Customer Sales & Retention Analysis (AdventureWorks)
 ## Project Overview
-This project focuses on analyzing customer purchasing behavior and sales trends using SQL and Power BI.  
-The goal is to identify retention patterns, key revenue drivers, and opportunities for business growth.
-## Objectives 
-- Analyze customer retention over time (cohort analysis)
-- Identify trends in sales performance
-- Detect high-value customer segments
-- Provide actionable business recommendations
-## Tools & Technologies
-- SQL (data extraction & transformation)
-- Power BI (data visualization)
-## Dataset
+This educational project aims to demonstrate the integration of **SQL** and **Power BI** in a real-world business analytics workflow.
+The primary goal was to analyze customer purchasing behavior, sales dynamics, and retention patterns for a bicycle retailer to provide actionable growth strategies.
+## Tech Stack & Skills
+- **SQL (MS SQL Server):** Data Extraction, Data Cleaning, CTEs, Joins, Window Functions, Pivot Tables.
+- **Power BI:** Data Visualization, DAX, Interactive Dashboarding.
+## Project Workflow
+### 1. Data Transformation (SQL)
+I used the 'AdventureWorksDW2025' database to prepare the analytical datasets. Key technical implementations include:
+- **CTEs & Joins:** Heavily utilized to structure complex queries, especially for **RFM** and **Cohort Analysis**.
+- **CASE WHEN:** Applied for rule-based customer segmentation (categorizing users by purchase frequency and value).
+- **PIVOT:** Used to transform data into a matrix format for the Cohort Analysis table.
+- **Window Functions:** Implemented `SUM() OVER()` to calculate the revenue contribution of the **Top 10 products**.
+- **Data Cleaning:** Handled date formatting and filtered out irrelevant records for a clean analysis.
+- 🔗 **[View SQL Script](./SQL)**
+### 2. Visualization & DAX (Power BI)
+Built an interactive dashboard to translate raw data into business insights:
+- **DAX Measures:** Developed custom calculations, specifically for tracking the **Retention Rate %** over time.
+- **Data Storytelling:** Designed visual layouts to highlight key performance indicators (KPIs) like Revenue Growth and Customer Loss.
+- 🔗 **[Download Power BI Dashboard (.pbix)](./Dashboard/BI_dashboards.pbix)**
+---
+## Business Analysis & Insights
+The analysis focused on a critical issue: **low customer retention** despite a significant increase in total orders.
+### Key Findings:
+- **The "Growth Trap":** While orders and revenue are growing, the focus is heavily shifted toward new customer acquisition rather than retention.
+- **High Churn:** Over **50% of the customer base** falls into the "Lost Customers" category.
+- **Low Retention:** Cohort analysis reveals that long-term customer loyalty remains extremely low across almost all periods.
+### Recommendations:
+- **Loyalty Programs:** Implement reward systems to incentivize repeat purchases.
+- **Personalization:** Use RFM segments for targeted email marketing.
+- **Focus on "Big Spenders":** Prioritize high-value segments to increase Customer Lifetime Value (CLV).
+- **Cross-Sell Strategies:** Introduce related products (accessories, maintenance) to boost revenue per customer.
+---
+## Final Report
+A comprehensive PDF report with detailed findings and business recommendations:
+- 🔗 **[Read Full Analysis (PDF)](./Report/Business_Analysis_Report.pdf)**
 
-## Analysis
-- Sales Dynamic Analysis found trends and patterns over time
-- RFM Analysis segmented customers
-- Cohort Analysis revealed retention
-## Dashboard
-Power BI dashboard includes:
-- Sales trends over time
-- Customer segmentation
-- Cohort retention matrix and etc.
-## Key Insights
-- Orders increased sixfold from winter 2012 to winter 2013
-- Customer retention improved in 2013 compared to 2012
-- Over 50% of customers fall into the “Lost Customers” category
-- Long-term customer retention remains low despite overall growth
-## Recommendations 
-- Strengthen customer retention through loyalty programs and personalized communication  
-- Focus on high-value segments (Big Spenders) to increase customer lifetime value 
-- Implement cross-selling strategies to boost revenue per customer  
+## Dashboard Preview
+![Dashboard Screenshots](./Images)
