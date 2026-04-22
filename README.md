@@ -19,6 +19,12 @@ Built an interactive dashboard to translate raw data into business insights:
 - **DAX Measures:** Developed custom calculations, specifically for tracking the **Retention Rate %** over time.
 - **Data Storytelling:** Designed visual layouts to highlight key performance indicators (KPIs) like Revenue Growth and Customer Loss.
 - 🔗 **[Download Power BI Dashboard (.pbix)](./Dashboard/BI_dashboards.pbix)**
+### 3. Advanced Analytics (Python)
+Extended the project with Python to automate and deepen the analysis:
+- **ABC-XYZ Matrix:** Performed multi-dimensional inventory classification (Revenue vs. Demand Stability).
+- **Refactored Cohort Analysis:** Implemented the logic in Pandas for better scalability and execution speed.
+- **Direct DB Connection:** Integrated `SQLAlchemy` for a seamless SQL-to-Python pipeline.
+- 🔗 **[View Python Module & Findings](./Python_Analysis)**
 ---
 ## Business Analysis & Insights
 The analysis focused on a critical issue: **low customer retention** despite a significant increase in total orders.
