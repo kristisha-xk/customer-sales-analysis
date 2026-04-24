@@ -5,6 +5,7 @@ The primary goal was to analyze customer purchasing behavior, sales dynamics, an
 ## Tech Stack & Skills
 - **SQL (MS SQL Server):** Data Extraction, Data Cleaning, CTEs, Joins, Window Functions, Pivot Tables.
 - **Power BI:** Data Visualization, DAX, Interactive Dashboarding.
+- **Python (VS Code, pandas):** SQLAlchemy, Aggregation, Pivot Table, Visualisation with matplotlib and seaborn.
 ## Project Workflow
 ### 1. Data Transformation (SQL)
 I used the 'AdventureWorksDW2025' database to prepare the analytical datasets. Key technical implementations include:
